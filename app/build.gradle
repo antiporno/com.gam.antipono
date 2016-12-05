@@ -35,15 +35,10 @@ android {
     productFlavors {
         lightningPlus {
             buildConfigField "boolean", "FULL_VERSION", "true"
-            applicationId "acr.browser.lightning"
-            versionCode 90
+            applicationId "com.gam.antiporno"
+            versionCode 4
         }
 
-        lightningLite {
-            buildConfigField "boolean", "FULL_VERSION", "false"
-            applicationId "acr.browser.barebones"
-            versionCode 92
-        }
     }
 
     lintOptions {
@@ -71,6 +66,7 @@ dependencies {
     compile 'com.android.support:design:24.2.1'
     compile 'com.android.support:recyclerview-v7:24.2.1'
     compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
 
     // html parsing for reading mode
     compile 'org.jsoup:jsoup:1.9.2'

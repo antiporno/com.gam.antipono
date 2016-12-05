@@ -1,11 +1,15 @@
 <!-- Copyright 2014 ACR Development -->
-<android.support.design.widget.CoordinatorLayout
-    android:id="@+id/coordinator_layout"
+<android.support.design.widget.CoordinatorLayout android:id="@+id/coordinator_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.BrowserActivity">
+    tools:context=".activity.BrowserActivity"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+
+
+
 
         <android.support.v4.widget.DrawerLayout
             android:id="@+id/drawer_layout"
@@ -23,8 +27,19 @@
 
                 <include layout="@layout/browser_content"/>
 
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="false"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/FIXED_bottom_antiporno"
+                    android:layout_centerHorizontal="true">
+                </com.google.android.gms.ads.AdView>
+
                 <include layout="@layout/search_interface"/>
             </LinearLayout>
+
 
             <FrameLayout
                 android:id="@+id/left_drawer"
@@ -42,8 +57,13 @@
                 android:layout_gravity="end"
                 android:background="?attr/drawerBackground"
                 android:fitsSystemWindows="true"
-                android:weightSum="1"/>
+                android:weightSum="1">
+
+            </FrameLayout>
+
+
 
         </android.support.v4.widget.DrawerLayout>
 
 </android.support.design.widget.CoordinatorLayout>
+

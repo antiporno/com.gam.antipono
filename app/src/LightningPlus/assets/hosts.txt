@@ -29791,13 +29791,6 @@
 127.0.0.1	goods.marketgid.com
 127.0.0.1	goods.us.marketgid.com
 127.0.0.1	goodtraffic.net
-127.0.0.1	google-analytics.com
-127.0.0.1	googleads.g.doubleclick.net
-127.0.0.1	googleads2.g.doubleclick.net
-127.0.0.1	googleads4.g.doubleclick.net
-127.0.0.1	googleadservices.com
-127.0.0.1	googlesyndication.com
-127.0.0.1	googletagmanager.com
 127.0.0.1	gooool.com
 127.0.0.1	gopacket.goforandroid.com
 127.0.0.1	gopath2.xyz
