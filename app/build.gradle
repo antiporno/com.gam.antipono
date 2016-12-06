@@ -36,7 +36,7 @@ android {
         lightningPlus {
             buildConfigField "boolean", "FULL_VERSION", "true"
             applicationId "com.gam.antiporno"
-            versionCode 4
+            versionCode 6
         }
 
     }
